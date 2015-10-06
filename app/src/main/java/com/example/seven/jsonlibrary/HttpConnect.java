@@ -34,7 +34,7 @@ public class HttpConnect {
 
     static boolean firstThread = true;
 
-    private static HttpConnect getFirstInstance() {
+    private static HttpConnect getInstance() {
 
         if (firstInstance == null) {
             if(firstThread){
