@@ -104,6 +104,7 @@ public class JSONParser {
         return values;
     }
 
+    //function to get values on json with json arrays and inner json objects
     public List<Map<String,List<Map<String,String>>>> get2Values(){
         List<Map<String,List<Map<String,String>>>> values = new ArrayList<>();
 
