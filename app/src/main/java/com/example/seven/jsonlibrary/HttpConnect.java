@@ -61,7 +61,7 @@ public class HttpConnect {
     }
 
     //Making Http Request Without Authorization Headers
-    private String httpMakeRequest(String url, Map<String,String> param, String method){
+    public String httpMakeRequest(String url, Map<String,String> param, String method){
        String json = null;
         List<NameValuePair> httpParams = new ArrayList<>();
 
@@ -100,7 +100,7 @@ public class HttpConnect {
     }
 
     //Making Http Requests with Headers
-    private String makeHttpRequest(String url, Map<String,String> param, Map<String, String> headers, String method){
+    public String makeHttpRequest(String url, Map<String,String> param, Map<String, String> headers, String method){
         String json = null;
         List<NameValuePair> httpParams = new ArrayList<>();
         List<NameValuePair> httpHeaders = new ArrayList<>();
