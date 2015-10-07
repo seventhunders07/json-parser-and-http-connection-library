@@ -34,7 +34,7 @@ public class HttpConnect {
 
     static boolean firstThread = true;
 
-    private static HttpConnect getInstance() {
+    public static HttpConnect getInstance() {
 
         if (firstInstance == null) {
             if(firstThread){
@@ -61,7 +61,7 @@ public class HttpConnect {
     }
 
     //Making Http Request Without Authorization Headers
-    public String httpMakeRequest(String url, Map<String,String> param, String method){
+    private String httpMakeRequest(String url, Map<String,String> param, String method){
        String json = null;
         List<NameValuePair> httpParams = new ArrayList<>();
 
@@ -100,7 +100,7 @@ public class HttpConnect {
     }
 
     //Making Http Requests with Headers
-    public String makeHttpRequest(String url, Map<String,String> param, Map<String, String> headers, String method){
+    private String makeHttpRequest(String url, Map<String,String> param, Map<String, String> headers, String method){
         String json = null;
         List<NameValuePair> httpParams = new ArrayList<>();
         List<NameValuePair> httpHeaders = new ArrayList<>();
